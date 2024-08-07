@@ -33,7 +33,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 110px;
+    padding-top: 50px;
     height: calc(100vh - 110px); 
 }
 
@@ -95,7 +95,7 @@ h2 br {
     display: flex;
     flex-direction: column;
     justify-content: flex-start; 
-    height: 80%;
+    height: 70%;
     margin-top: 10px; 
 }
 
