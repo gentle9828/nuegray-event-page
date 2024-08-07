@@ -67,7 +67,7 @@ h1::after {
     display: flex;
     align-items: center;
     margin-top: 10px;
-    font-size: 0.9em;
+    font-size: 0.8em;
     font-weight: 550;
     color: #333;
     line-height: 1;
@@ -75,8 +75,8 @@ h1::after {
 
 .color-dot {
     margin-top: 0;
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     margin-right: 5px;
     display: inline-block;

@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const maxPicks = 3;
     let currentPicks = 0;
     let currentIndex = -3;
+    let selectedCards = [];
 
     function updateCarousel() {
         const cardWidth = cards[0].offsetWidth + 20; 
@@ -132,6 +133,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 pickButton.textContent = "PICK";
                 pickButton.style.backgroundColor = "#514C48"; 
                 currentPicks--;
+                selectedCards = selectedCards.filter(c => c.name !== card.querySelector('.name').textContent);
             } else {
                 if (currentPicks < maxPicks) {
                     pickButton.classList.add('clicked');
@@ -160,10 +162,20 @@ document.addEventListener('DOMContentLoaded', function() {
                             pickButton.style.backgroundColor = "#b54d77";
                             break;
                     }
+
+                    const cardData = {
+                        imgSrc: card.querySelector('.profile-image').src,
+                        name: card.querySelector('.name').textContent,
+                        color: pickButton.style.backgroundColor
+                    };
+
+                    selectedCards.push(cardData);
                 } else {
                     alert("최대 3개까지 선택 가능합니다.");
                 }
             }
+
+            localStorage.setItem('selectedCards', JSON.stringify(selectedCards));
         });
 
         // Dot 클릭 이벤트 추가
@@ -189,6 +201,7 @@ document.addEventListener('DOMContentLoaded', function() {
             confirmButton.style.display = 'none';  
             colorAlertModal.style.display = "flex";
         } else {
+            localStorage.setItem('selectedCards', JSON.stringify(selectedCards));
             window.location.href = "./confirmation.html";
         }
     }
