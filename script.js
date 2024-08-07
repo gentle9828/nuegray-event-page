@@ -165,7 +165,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
         });
+
+        // Dot 클릭 이벤트 추가
+        const dots = card.querySelectorAll('.dot');
+        dots.forEach(dot => {
+            dot.addEventListener('click', function() {
+                const index = parseInt(dot.getAttribute('data-index'), 10);
+                scrollToIndex(index - 3);
+            });
+        });
     });
+    
 
     imageModal.onclick = function(event) {
         if (event.target == imageModal) {
