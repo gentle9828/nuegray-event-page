@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url('./image/background/lastBackground.png') no-repeat center center fixed; /* 배경 이미지 */
+    background-size: cover;
+}
+
+.title-container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: -50vh;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-top: 10vh;
+    color: #B6A8A1;
+}
+
+h2 {
+    margin-top: 2vh;
+    font-size: 2.0em;
+    margin-bottom: 5px;
+    color: #534D49;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 2.0em;
+    margin-top: 0;
+    color: #55504C;
+    font-weight:bold
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;  /* 부모 컨테이너의 너비를 설정 */
+    padding: 0 20px; /* 좌우 패딩 추가 */
+    transform: translateY(35vh); /* 버튼들을 위로 올리기 */
+}
+
+button {
+    width: 60%;
+    max-width: 300px; /* 버튼의 최대 너비를 설정 */
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.purchase-button {
+    background: #514C48;
+    color: white;
+    margin-bottom: 1vh;
+}
+
+.follow-button {
+    background-color: rgba(255, 255, 255, 0);
+    color: #A5A4A4;
+    border: 1px solid #BdBBB9;
+    margin-bottom: 1vh;
+}
+
+.kakao-button {
+    background-color: rgba(255, 255, 255, 0);
+    color: #A5A4A4;
+    border: 1px solid #BdBBB9;
+}
+
+

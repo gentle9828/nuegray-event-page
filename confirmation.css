@@ -1,0 +1,108 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background: url('image/background/middleBackground.png') center center fixed;
+    background-size: cover;
+}
+
+/* Confirmation container styles */
+.confirmation-container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 12vh; /* 유지되는 top 간격 */
+}
+
+h1 {
+    font-size: 1.2em;
+    position: relative;
+    color: #705e4f;
+    margin-top: 5vh; /* 추가된 top margin */
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 1px;
+    background: #705e4f;
+    margin: 1vh auto; 
+}
+
+/* Selected colors styles */
+.selected-colors {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3vh;
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+    height: 150px;
+}
+
+.selected-colors .color-item {
+    text-align: center;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selected-colors img {
+    width: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.selected-colors .color-name {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 0.9em;
+    font-weight: 550;
+    color: #333;
+    line-height: 1;
+}
+
+.color-dot {
+    margin-top: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Button styles */
+.confirm-button, .back-button {
+    width: 50%;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    margin-bottom: 10px;
+    max-width: 400px;
+    border-radius: 5px;
+}
+
+.confirm-button {
+    margin-top: 5vh;
+    background: #514C48;
+    color: white;
+}
+
+.back-button {
+    background-color: rgba(255, 255, 255, 0);
+    color: #A5A4A4;
+    border: 1px solid #BdBBB9;
+}
