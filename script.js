@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 });
 
-                if (card.querySelector('.name').textContent === 'Pansy') {
+                if (card.querySelector('.name').textContent === '#11 Pansy') {
                     confirmButton.style.display = 'block';
                 } else {
                     confirmButton.style.display = 'none';
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (pickButton.classList.contains('clicked')) {
                 pickButton.classList.remove('clicked');
                 pickButton.textContent = "PICK";
-                pickButton.style.backgroundColor = "#333"; 
+                pickButton.style.backgroundColor = "#514C48"; 
                 currentPicks--;
             } else {
                 if (currentPicks < maxPicks) {
@@ -138,25 +138,25 @@ document.addEventListener('DOMContentLoaded', function() {
                     pickButton.textContent = "PICKED";
                     currentPicks++;
                     switch (card.querySelector('.name').textContent) {
-                        case 'Som':
+                        case '#5 Som':
                             pickButton.style.backgroundColor = "#f9cdcd";
                             break;
-                        case 'Scene':
+                        case '#6 Scene':
                             pickButton.style.backgroundColor = "#c69e91";
                             break;
-                        case 'Slit':
+                        case '#7 Slit':
                             pickButton.style.backgroundColor = "#e9938d";
                             break;
-                        case 'Nude\'it':
+                        case '#8 Nude\'it':
                             pickButton.style.backgroundColor = "#c88e8a";
                             break;
-                        case 'Lsh':
+                        case '#9 Ish':
                             pickButton.style.backgroundColor = "#ecb8d3";
                             break;
-                        case 'Carriére':
+                        case '#10 Carriére':
                             pickButton.style.backgroundColor = "#aa819f";
                             break;
-                        case 'Pansy':
+                        case '#11 Pansy':
                             pickButton.style.backgroundColor = "#b54d77";
                             break;
                     }

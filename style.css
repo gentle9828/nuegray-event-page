@@ -57,6 +57,13 @@ body {
     font-weight: bold;
 }
 
+.header h3 {
+    font-size: 0.8em;
+    color:white;
+    font-weight: 600;
+    margin-top: -10px;
+}
+
 h2 br {
     font-weight: 300;
 }
@@ -182,9 +189,6 @@ h2 br {
     margin: 10px auto 0 auto; /* Ensure space between dots and button */
 }
 
-.pick-button:hover {
-    background: #555;
-}
 
 /* Modal styles */
 .modal {
