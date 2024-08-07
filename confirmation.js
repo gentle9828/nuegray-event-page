@@ -38,11 +38,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 컬러 다시 보기 버튼 클릭 시 index로 이동
     document.querySelector('.back-button').addEventListener('click', function() {
-        window.location.href = 'index.html';
+        window.location.href = './index.html';
     });
 
     // 투표 하기 버튼 클릭 시 로직
     document.querySelector('.confirm-button').addEventListener('click', function() {
-        window.location.href = 'complete.html';
+        window.location.href = './complete.html';
     });
 });
