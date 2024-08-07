@@ -116,6 +116,7 @@ h2 br {
     margin: 0 auto;
     margin-top: 1vh;
     flex-grow: 0; 
+    object-fit: cover;
 }
 
 /* Name styles */
