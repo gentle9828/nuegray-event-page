@@ -12,19 +12,18 @@ body {
     background-size: cover;
 }
 
-/* Confirmation container styles */
 .confirmation-container {
     text-align: center;
     padding: 20px;
     border-radius: 15px;
-    margin-top: 12vh; /* 유지되는 top 간격 */
+    margin-top: 12vh; 
 }
 
 h1 {
     font-size: 1.2em;
     position: relative;
     color: #705e4f;
-    margin-top: 5vh; /* 추가된 top margin */
+    margin-top: 5vh;
 }
 
 h1::after {

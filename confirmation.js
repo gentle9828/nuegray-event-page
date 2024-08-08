@@ -1,4 +1,3 @@
-// confirmation.js
 document.addEventListener('DOMContentLoaded', function() {
     const selectedColorsContainer = document.getElementById('selectedColorsContainer');
     const selectedCards = JSON.parse(localStorage.getItem('selectedCards'));
