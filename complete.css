@@ -9,8 +9,7 @@ body {
     flex-direction: column;
     background: url('./image/background/lastBackground.png') center center fixed; /* 배경 이미지 */
     background-size: cover;
-    width: 100%;
-    position: fixed;
+    background-attachment: fixed;
 }
 
 .title-container {
