@@ -110,7 +110,7 @@ h2 br {
     transform: translateY(30px); 
 }
 
-/* .image-container {
+.image-container {
     position: relative;
     width: 90%;
     height: 60%;
@@ -133,9 +133,10 @@ h2 br {
     right: 10px;
     width: 24px;
     height: 24px;
-} */
+    border-radius: 15px;
+}
 
-.profile-image {
+/* .profile-image {
     width: 90%; 
     height: 60%;
     border-radius: 20px;
@@ -144,7 +145,7 @@ h2 br {
     margin-top: 1vh;
     flex-grow: 0; 
     object-fit: cover;
-}
+} */
 
 .name {
     font-size: 1.5em;
