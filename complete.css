@@ -9,6 +9,7 @@ body {
     flex-direction: column;
     background: url('./image/background/lastBackground.png') center center fixed; /* 배경 이미지 */
     background-size: cover; /* 배경 이미지 크기를 80%로 설정 */
+    width: 100%;
 }
 
 .title-container {
